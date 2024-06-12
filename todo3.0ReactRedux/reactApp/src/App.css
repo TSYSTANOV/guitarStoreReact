@@ -1,0 +1,39 @@
+:root{
+  --color-light:#f8f9fa;
+  --color-white:#fff;
+  --color-unaccent:#808080;
+  --color-medium:#e8e8e8;
+  --color-dark:#a1a1a1;
+  --color-error-light:#f25b6b;
+  --color-error-dark:#bd4450;
+
+  --spacing-small:10px;
+  --spacing-medium:15px;
+  --spacing-large:30px;
+  --box-shadow:2px 2px 5px 1px black;
+  --border-radius:5px;
+
+}
+
+*,*::before,*::after
+{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body
+{
+  font-family: sans-serif;
+  line-height: 1.7;
+  background-color: var(--color-light);
+}
+::-webkit-scrollbar{
+  width:10px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--color-dark);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+  background-color: var(--color-white);
+}
