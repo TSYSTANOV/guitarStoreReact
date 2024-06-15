@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from "react"
 import CATALOG from '../server/catalog.json'
 import { CartContext } from "../context/CartContext"
+import { LoadingSpinner } from "../components/LoadingSpinner/LoadingSpinner"
 
 
 export function withApi (Component){
   return (props)=>{
-    const [cart, setCart] = useContext(CartContext)
-    console.log(cart)
+    const {cart, setCart} = useContext(CartContext)
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
     const [data,setData] = useState([])
@@ -32,7 +32,7 @@ export function withApi (Component){
 
     }
     return (
-      <>{loading && <div>Loading</div>}
+      <>{loading && <LoadingSpinner/>}
       {error ? <div>Error data</div> : <Component catalog={data} {...props} addToCart={addToCart} cart={cart}/>}
       </>
     )

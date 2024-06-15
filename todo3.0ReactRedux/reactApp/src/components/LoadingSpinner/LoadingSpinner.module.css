@@ -1,0 +1,16 @@
+.spinner{
+  margin: 50px auto;
+  border: 10px dashed greenyellow;
+  width:140px;
+  height: 140px;
+  border-radius: 50%;
+  animation: cirleRound 0.4s ease-out infinite;
+}
+@keyframes cirleRound {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

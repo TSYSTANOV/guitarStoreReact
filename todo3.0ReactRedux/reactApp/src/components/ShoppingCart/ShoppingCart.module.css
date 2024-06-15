@@ -1,0 +1,31 @@
+.shopping-container{
+  position: fixed;
+  width: 97%;
+  height: 97vh;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  padding: var(--spacing-large);
+  background-color: var(--color-white);
+  box-shadow: var(--box-shadow);
+}
+.shopping-element__name{
+  font-weight: 900;
+  padding: var(--spacing-medium);
+}
+.shopping-element__price{
+  color:var(--color-unaccent)
+}
+.shopping__close{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top:20px;
+  right:20px;
+  /* background-image:url(/images/free-icon-close-151882.png); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  cursor: pointer;
+}
